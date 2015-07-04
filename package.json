@@ -7,7 +7,7 @@
     "build": "npm run clean && mkdir dist && babel index.js > dist/index.js",
     "clean": "rimraf dist",
     "lint": "standard index.js",
-    "preversion": "npm run build",
+    "preversion": "npm run build && git add dist",
     "test": "babel-node test.js"
   },
   "keywords": [
