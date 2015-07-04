@@ -7,7 +7,6 @@ let pad = (str, size) => ('000000000' + str).slice(-size)
 let padding = 2
 let pid = pad(process.pid.toString(36), padding)
 let hostname = os.hostname()
-let length = hostname.length
 
 hostname = hostname.split('')
   .reduce((prev, char) => +prev + char.charCodeAt(0), +hostname.length + 36)
