@@ -1,6 +1,6 @@
 {
   "name": "node-fingerprint",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generates a fingerprint of a node instance",
   "main": "dist/index.js",
   "scripts": {

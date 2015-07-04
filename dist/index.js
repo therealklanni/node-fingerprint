@@ -12,7 +12,6 @@ var pad = function pad(str, size) {
 var padding = 2;
 var pid = pad(process.pid.toString(36), padding);
 var hostname = os.hostname();
-var length = hostname.length;
 
 hostname = hostname.split('').reduce(function (prev, char) {
   return +prev + char.charCodeAt(0);
