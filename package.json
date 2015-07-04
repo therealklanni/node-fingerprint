@@ -1,0 +1,23 @@
+{
+  "name": "node-fingerprint",
+  "version": "0.0.0",
+  "description": "Generates a fingerprint of a node instance",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && mkdir dist && babel index.js > dist/index.js",
+    "clean": "rimraf dist",
+    "lint": "standard index.js",
+    "test": "babel-node test.js"
+  },
+  "keywords": [
+    "fingerprint",
+    "node"
+  ],
+  "author": "Kevin Lanni <therealklanni@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "^2.4.1",
+    "tape": "^4.0.0"
+  }
+}
