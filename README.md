@@ -1,4 +1,4 @@
-# node-fingerprint
+# node-fingerprint [![npm version](https://badge.fury.io/js/node-fingerprint.svg)](http://badge.fury.io/js/node-fingerprint) [![Build Status](https://travis-ci.org/therealklanni/node-fingerprint.svg?branch=master)](https://travis-ci.org/therealklanni/node-fingerprint)
 
 > Generate a fingerprint for a node process
 
