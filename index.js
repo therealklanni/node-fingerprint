@@ -1,17 +1,16 @@
 'use strict'
 
-let os = require('os')
+const os = require('os')
 
-let pad = (str, size) => ('000000000' + str).slice(-size)
+const pad = (str, size) => (new Array(size + 1).join('0') + str).slice(-size)
 
-let padding = 2
-let pid = pad(process.pid.toString(36), padding)
-let hostname = os.hostname()
-
-hostname = hostname.split('')
-  .reduce((prev, char) => +prev + char.charCodeAt(0), +hostname.length + 36)
+const padding = 2
+const pid = pad(process.pid.toString(36), padding)
+const hostname = os.hostname()
+  .split('')
+  .reduce((prev, char) => +prev + char.charCodeAt(0), +os.hostname().length + 36)
   .toString(36)
 
-let hostId = pad(hostname, padding)
+const hostId = pad(hostname, padding)
 
 export default () => pid + hostId

@@ -1,6 +1,6 @@
 'use strict'
 
-import fingerprint from './index'
+import fingerprint from './dist'
 
 let test = require('tape')
 

@@ -8,7 +8,7 @@
     "clean": "rimraf dist",
     "lint": "standard index.js",
     "preversion": "npm run build && git add dist",
-    "test": "babel-node test.js"
+    "test": "npm run build && babel-node test.js"
   },
   "keywords": [
     "fingerprint",
