@@ -15,7 +15,7 @@ npm install node-fingerprint
 ## Use
 
 ```
-var fingerprint = require('node-fingerprint')()
+var fingerprint = require('node-fingerprint')(process.pid)
 ```
 
 ---
