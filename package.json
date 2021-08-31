@@ -10,6 +10,10 @@
     "preversion": "npm run build && git add dist",
     "test": "npm run build && babel-node test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/therealklanni/node-fingerprint.git"
+  },
   "keywords": [
     "fingerprint",
     "node"
